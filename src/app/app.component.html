@@ -1,0 +1,9 @@
+<app-header (OnNavigationChanged)="OnNavigationChangedFired($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipes *ngIf="number===1"></app-recipes>
+      <app-shopping-list *ngIf="number===2"></app-shopping-list>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+ <a href="#" class="list-group-item list-group-item-action" (click)="OnRecipeSelect()">
+            <div class="d-flex w-100 justify-content-between">
+                <div>
+
+                    <h5 class="mb-1">{{recipe.name}}</h5> 
+                    
+                    <p class="mb-1">{{recipe.description}}</p>
+                   
+                </div>
+              <img [src]="recipe.imagePath" style="max-height:100px;" alt="" class="img-fluid">
+            </div> 
+</a>

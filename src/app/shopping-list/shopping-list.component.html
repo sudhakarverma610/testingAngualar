@@ -3,10 +3,10 @@
         <app-shopping-edit (OnAddedIngredentEvent)="OnAddedIngredentChanged($event)"></app-shopping-edit>
         <hr>
         <ul class="list-group">
-            <a class="list-group-item" style="cursor: pointer;"
+            <div class="list-group-item" style="cursor: pointer;"
             *ngFor="let ingrendent of ingredients">
               {{ingrendent.name}} ({{ingrendent.amount}})
-            </a>
+        </div>
            
         </ul>
     </div>
